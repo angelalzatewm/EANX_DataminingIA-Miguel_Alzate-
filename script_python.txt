@@ -1,0 +1,346 @@
+# ==============================================================================
+# 🛠️ PASO 1: CARGA, VISUALIZACIÓN DIRECTA Y DIAGNÓSTICO DE CONTAMINACIÓN
+# ==============================================================================
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import io
+import re
+from google.colab import files
+import psycopg2
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.ensemble import IsolationForest
+
+print("📤 Sube el archivo 'historial_gastos_mensuales_original.csv':")
+uploaded = files.upload()
+
+# Cargar dataset crudo
+filename = list(uploaded.keys())[0]
+df_raw = pd.read_csv(io.BytesIO(uploaded[filename]))
+
+print("\n" + "="*80)
+print("🔍 1.1 VISUALIZACIÓN DIRECTA DE MUESTRAS EN ESTADO CRUDO (CAPA BRONZE)")
+print("="*80)
+
+print("\n📌 Primeras 10 Filas (Inspección Visual de Contaminación):")
+display(df_raw.head(10))
+
+print("\n📌 Muestra Aleatoria de 10 Filas (Detectar Typos y Nulos Esporádicos):")
+display(df_raw.sample(10, random_state=42))
+
+print("\n" + "="*80)
+print("📊 1.2 INVENTARIO DE ANOMALÍAS Y ANÁLISIS DE TIPOS DE DATOS")
+print("="*80)
+print(df_raw.info())
+
+print("\n" + "="*80)
+print("🚨 1.3 INFORME DE CONTAMINACIÓN Y DIAGNÓSTICO DE CALIDAD DE DATOS")
+print("="*80)
+
+total_filas = len(df_raw)
+total_celdas = df_raw.size
+
+# A. Análisis de Duplicados
+duplicados_exactos = df_raw.duplicated().sum()
+duplicados_id = df_raw.duplicated(subset=['id_transaccion']).sum()
+
+# B. Análisis de Nulos por Columna
+nulos_por_col = df_raw.isnull().sum()
+total_nulos = nulos_por_col.sum()
+
+# C. Detección de Inconsistencias de Formato (Expresiones Regulares Vectorizadas)
+# 1. Montos contaminados (presencia de $, espacios o valores negativos)
+montos_con_signo = df_raw['monto_usd'].astype(str).str.contains(r'\$', regex=True, na=False).sum()
+montos_negativos = df_raw['monto_usd'].astype(str).str.contains(r'^-', regex=True, na=False).sum()
+
+# 2. Fechas inconsistentes (no cumplen el patrón estricto YYYY-MM-DD)
+fechas_inconsistentes = (~df_raw['fecha_gasto'].astype(str).str.match(r'^\d{4}-\d{2}-\d{2}$', na=False) & df_raw['fecha_gasto'].notnull()).sum()
+
+# 3. Errores de Tipografía / Leet Speak / Espacios en blanco excesivos en 'concepto'
+conceptos_con_espacios = df_raw['concepto'].astype(str).str.contains(r'^\s+|\s+$', regex=True, na=False).sum()
+conceptos_con_leet = df_raw['concepto'].astype(str).str.contains(r'[0341]', regex=True, na=False).sum()
+
+# Resumen Métrico de Calidad
+print(f"• Dimensiones Iniciales    : {df_raw.shape[0]} filas x {df_raw.shape[1]} columnas ({total_celdas} celdas totales)")
+print(f"• Filas Duplicadas Exactas : {duplicados_exactos} ({round((duplicados_exactos/total_filas)*100, 2)}%)")
+print(f"• Transacciones con ID Duplicado: {duplicados_id}")
+print(f"• Celdas Nulas/Vacías Totales   : {total_nulos} ({round((total_nulos/total_celdas)*100, 2)}% del total de celdas)")
+
+print("\n📋 Conteo de Valores Nulos por Columna:")
+for col, count in nulos_por_col.items():
+    pct = round((count / total_filas) * 100, 2)
+    print(f"  - {col.ljust(18)}: {count} nulos ({pct}%)")
+
+print("\n☣️ Diagnóstico de Inconsistencias de Formato y Errores Tipográficos:")
+print(f"  - Montos con símbolo '$'         : {montos_con_signo} registros")
+print(f"  - Montos con valores negativos   : {montos_negativos} registros")
+print(f"  - Fechas con formato no-estándar : {fechas_inconsistentes} registros")
+print(f"  - Conceptos con espacios sobrantes: {conceptos_con_espacios} registros")
+print(f"  - Conceptos con caracteres leet/typos: {conceptos_con_leet} registros")
+
+# Índice Global de Contaminación Estimado
+anomalias_totales = total_nulos + duplicados_exactos + montos_con_signo + montos_negativos + fechas_inconsistentes + conceptos_con_leet
+indice_contaminacion = round((anomalias_totales / total_celdas) * 100, 2)
+
+print(f"\n🔥 ÍNDICE ESTIMADO DE CONTAMINACIÓN GLOBAL DEL DATASET: {indice_contaminacion}%")
+print("="*80)
+# ==============================================================================
+# 🛠️ PASO 2: PIPELINE COMPLETO DE SANEAMIENTO, IMPUTACIÓN Y ANALÍTICA
+# ==============================================================================
+# Configuración visual global
+sns.set_theme(style="whitegrid")
+plt.rcParams['font.size'] = 10
+
+def ejecutar_pipeline_saneamiento(df_in: pd.DataFrame) -> pd.DataFrame:
+    print("="*80)
+    print("🚀 INICIANDO EJECUCIÓN DEL PIPELINE DE INGENIERÍA DE DATOS (CAPA SILVER)")
+    print("="*80)
+    
+    df = df_in.copy()
+    filas_raw = len(df)
+    
+    # --------------------------------------------------------------------------
+    # 1. TRATAMIENTO DE DUPLICADOS
+    # --------------------------------------------------------------------------
+    df = df.drop_duplicates()
+    duplicados_filas = filas_raw - len(df)
+    
+    # Resolver duplicados en la clave primaria id_transaccion conservando la primera aparición
+    duplicados_id = df.duplicated(subset=['id_transaccion']).sum()
+    df = df.drop_duplicates(subset=['id_transaccion'], keep='first')
+    print(f"🧹 [DEDUPLICACIÓN] Filas exactas eliminadas: {duplicados_filas} | Claves 'id_transaccion' duplicadas eliminadas: {duplicados_id}")
+
+    # --------------------------------------------------------------------------
+    # 2. LIMPIEZA DE ERRORES TIPOGRÁFICOS Y ESPACIOS EN 'concepto' Y 'proveedor'
+    # --------------------------------------------------------------------------
+    # Reemplazo de caracteres Leet Speak comunes
+    leet_dict = {'4': 'a', '3': 'e', '1': 'i', '0': 'o', '5': 's'}
+    
+    def limpiar_texto(val):
+        if pd.isna(val):
+            return np.nan
+        text = str(val).strip() # Trimming de espacios sobrantes
+        for k, v in leet_dict.items():
+            text = text.replace(k, v)
+        # Normalizar espacios múltiples internos y convertir a Formato Título
+        text = re.sub(r'\s+', ' ', text)
+        return text.title()
+
+    df['concepto_clean'] = df['concepto'].apply(limpiar_texto)
+    df['proveedor_clean'] = df['proveedor'].apply(limpiar_texto)
+    
+    # --------------------------------------------------------------------------
+    # 3. CONVERSIÓN DE 'monto_usd' Y RECTIFICACIÓN DE SIGNOS/FORMATOS
+    # --------------------------------------------------------------------------
+    def limpiar_monto(val):
+        if pd.isna(val):
+            return np.nan
+        # Eliminar cualquier caracter que no sea dígito, punto o signo negativo
+        val_clean = re.sub(r'[^\d.-]', '', str(val))
+        try:
+            monto = float(val_clean)
+            return abs(monto) # Corregir montos con signos negativos erróneos
+        except ValueError:
+            return np.nan
+
+    df['monto_usd_clean'] = df['monto_usd'].apply(limpiar_monto)
+
+    # --------------------------------------------------------------------------
+    # 4. PARSEO ROBUSTO DE FECHAS ('fecha_gasto')
+    # --------------------------------------------------------------------------
+    fechas_normalizadas = df['fecha_gasto'].astype(str).str.replace('.', '/', regex=False)
+    df['fecha_gasto_clean'] = pd.to_datetime(fechas_normalizadas, errors='coerce', format='mixed')
+    
+    # Imputación de fechas faltantes usando propagación temporal (ffill/bfill)
+    df['fecha_gasto_clean'] = df['fecha_gasto_clean'].ffill().bfill()
+
+    # --------------------------------------------------------------------------
+    # 5. TRATAMIENTO DE VALORES NULOS (NaN) POR MEDIANA AGRUPADA
+    # --------------------------------------------------------------------------
+    # Imputar monto_usd faltante usando la mediana del concepto; si es nulo, la mediana global
+    medianas_concepto = df.groupby('concepto_clean')['monto_usd_clean'].transform('median')
+    mediana_global = df['monto_usd_clean'].median()
+    
+    df['monto_usd_clean'] = df['monto_usd_clean'].fillna(medianas_concepto).fillna(mediana_global)
+    df['concepto_clean'] = df['concepto_clean'].fillna("Gasto No Especificado")
+    df['metodo_pago_clean'] = df['metodo_pago'].fillna("No Registrado").astype(str).str.strip().str.title()
+    df['estado_pago_clean'] = df['estado_pago'].fillna("PENDIENTE").astype(str).str.upper().str.strip()
+    df['estado_pago_clean'] = df['estado_pago_clean'].replace({'PAGADO': 'APROBADO', 'PAGADO': 'APROBADO'})
+
+    # --------------------------------------------------------------------------
+    # 6. TRATAMIENTO ESTADÍSTICO DE OUTLIERS (IQR & Z-SCORE ROBUSTO)
+    # --------------------------------------------------------------------------
+    # A. Z-Score Robusto basado en MAD
+    mediana_monto = df['monto_usd_clean'].median()
+    mad_monto = np.median(np.abs(df['monto_usd_clean'] - mediana_monto))
+    # Para distribución normal equivalente: 0.6745 * (x - mediana) / MAD
+    df['z_score_robusto'] = 0.6745 * (df['monto_usd_clean'] - mediana_monto) / (mad_monto + 1e-6)
+    
+    # B. Rango Intercuartílico (IQR)
+    Q1 = df['monto_usd_clean'].quantile(0.25)
+    Q3 = df['monto_usd_clean'].quantile(0.75)
+    IQR = Q3 - Q1
+    limite_superior = Q3 + 1.5 * IQR
+    
+    # Detección de Outliers
+    outliers_mask = (df['z_score_robusto'].abs() > 3.5) | (df['monto_usd_clean'] > limite_superior)
+    print(f"⚠️ [ANOMALÍAS] Outliers detectados por Z-Score Robusto / IQR: {outliers_mask.sum()} registros.")
+    
+    # Cap / Acotamiento de outliers extremos a la frontera del límite superior
+    df['monto_usd_final'] = np.where(df['monto_usd_clean'] > limite_superior, limite_superior, df['monto_usd_clean'])
+
+    print("✅ PIPELINE COMPLETADO EXITOSAMENTE.")
+    print("="*80)
+    return df
+
+# Ejecutar el pipeline de saneamiento
+df_silver = ejecutar_pipeline_saneamiento(df_raw)
+
+# ==============================================================================
+# 📊 GENERACIÓN DE PANELES DE VISUALIZACIÓN MULTICAPA
+# ==============================================================================
+fig = plt.figure(figsize=(20, 14))
+gs = fig.add_gridspec(3, 2, hspace=0.35, wspace=0.25)
+
+# 图 1: Diagrama de Caja y Bigotes (Detección de Outliers Antes vs Después)
+ax1 = fig.add_subplot(gs[0, 0])
+data_box = [df_silver['monto_usd_clean'], df_silver['monto_usd_final']]
+ax1.boxplot(data_box, labels=['Antes de Tratar (Clean)', 'Después de Cap (Final)'], patch_artist=True,
+            boxprops=dict(facecolor='#87ceeb', color='blue'), medianprops=dict(color='red', linewidth=2))
+ax1.set_title("1. Detección y Acotamiento de Outliers (IQR / Boxplot)", fontsize=12, fontweight='bold')
+ax1.set_ylabel("Monto en USD")
+
+# 图 2: Tendencia Temporal de Gastos Mensuales
+ax2 = fig.add_subplot(gs[0, 1])
+df_temp = df_silver.set_index('fecha_gasto_clean').resample('ME')['monto_usd_final'].sum().reset_index()
+ax2.plot(df_temp['fecha_gasto_clean'], df_temp['monto_usd_final'], marker='o', color='#2b5c8f', linewidth=2.5)
+ax2.set_title("2. Tendencia Temporal Consolida de Gastos (Mensual)", fontsize=12, fontweight='bold')
+ax2.set_ylabel("Total USD")
+ax2.tick_params(axis='x', rotation=30)
+
+# 图 3: Top 5 Conceptos de Mayor Inversión
+ax3 = fig.add_subplot(gs[1, 0])
+top_conceptos = df_silver.groupby('concepto_clean')['monto_usd_final'].sum().nlargest(5)
+sns.barplot(x=top_conceptos.values, y=top_conceptos.index, ax=ax3, palette="Blues_r")
+ax3.set_title("3. Top 5 Conceptos por Presupuesto Ejecutado", fontsize=12, fontweight='bold')
+ax3.set_xlabel("Monto Acumulado (USD)")
+
+# 图 4: Distribución de Métodos de Pago (Pie Chart)
+ax4 = fig.add_subplot(gs[1, 1])
+metodos_count = df_silver['metodo_pago_clean'].value_counts()
+ax4.pie(metodos_count, labels=metodos_count.index, autopct='%1.1f%%', startangle=140, colors=sns.color_palette("pastel"))
+ax4.set_title("4. Participación por Método de Pago", fontsize=12, fontweight='bold')
+
+
+
+plt.suptitle("PANEL DE AUDITORÍA Y CALIDAD DE DATOS (CAPA SILVER)", fontsize=16, fontweight='bold', y=0.93)
+plt.show()
+
+# ==============================================================================
+# 🏆 PASO 3: CAPA GOLD (DATA MART ANALYTICS & MACHINE LEARNING)
+# ==============================================================================
+def ejecutar_capa_gold(df_silver_in: pd.DataFrame) -> dict:
+    print("="*80)
+    print("🌟 INICIANDO GENERACIÓN DE CAPA GOLD (BUSINESS ANALYTICS & ML)")
+    print("="*80)
+    
+    df_gold = df_silver_in.copy()
+    
+    # --------------------------------------------------------------------------
+    # 1. AGREGACIONES EJECUTIVAS Y METRICAS CORE (DATA MART DE GASTOS)
+    # --------------------------------------------------------------------------
+    # Extracción de características temporales
+    df_gold['anio_mes'] = df_gold['fecha_gasto_clean'].dt.to_period('M')
+    
+    # Tabla Fact: Resumen Mensual por Concepto y Método de Pago
+    data_mart_mensual = df_gold.groupby(['anio_mes', 'concepto_clean']).agg(
+        total_monto_usd=('monto_usd_final', 'sum'),
+        promedio_monto_usd=('monto_usd_final', 'mean'),
+        transacciones_count=('id_transaccion', 'count')
+    ).reset_index()
+    
+    print("\n📊 [DATA MART GOLD] Resumen Ejecutivo por Concepto (Top 5 Filas):")
+    display(data_mart_mensual.head(5))
+    
+    # --------------------------------------------------------------------------
+    # 2. SEGMENTACIÓN DE COMPORTAMIENTO MEDIANTE K-MEANS CLUSTERING
+    # --------------------------------------------------------------------------
+    # Normalización de variables continuas para K-Means
+    features_cluster = ['monto_usd_final', 'z_score_robusto']
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(df_gold[features_cluster])
+    
+    # Aplicación de K-Means (k=3 clusters: Gasto Bajo, Medio, Alto)
+    kmeans = KMeans(n_clusters=3, random_state=42, n_init=10)
+    df_gold['cluster_gasto'] = kmeans.fit_predict(X_scaled)
+    
+    # Mapeo de clusters a nombres interpretables por negocio
+    cluster_means = df_gold.groupby('cluster_gasto')['monto_usd_final'].mean().sort_values()
+    cluster_map = {old_label: f"Perfil_{idx+1}" for idx, old_label in enumerate(cluster_means.index)}
+    df_gold['categoria_gasto_ml'] = df_gold['cluster_gasto'].map(cluster_map)
+    
+    # --------------------------------------------------------------------------
+    # 3. DETECCIÓN AVANZADA DE ANOMALÍAS CON ISOLATION FOREST
+    # --------------------------------------------------------------------------
+    iso_forest = IsolationForest(contamination=0.05, random_state=42)
+    # -1 representa anomalía, 1 representa transacción normal
+    df_gold['anomalia_iforest'] = iso_forest.fit_predict(X_scaled)
+    df_gold['es_anomalia_ml'] = np.where(df_gold['anomalia_iforest'] == -1, "ALERTA", "NORMAL")
+    
+    anomalias_detectadas = (df_gold['es_anomalia_ml'] == "ALERTA").sum()
+    print(f"\n🤖 [MACHINE LEARNING] Anomalías operativas aisladas por Isolation Forest: {anomalias_detectadas} registros.")
+    
+    print("\n✅ CAPA GOLD GENERADA CON ÉXITO.")
+    print("="*80)
+    
+    return {
+        "df_gold_final": df_gold,
+        "data_mart_mensual": data_mart_mensual
+    }
+
+# Ejecutar el Pipeline de la Capa Gold
+resultados_gold = ejecutar_capa_gold(df_silver)
+df_gold_final = resultados_gold["df_gold_final"]
+data_mart_mensual = resultados_gold["data_mart_mensual"]
+
+# ==============================================================================
+# 📊 GENERACIÓN DE PANEL DE CONTROL ANALÍTICO (DASHBOARD GOLD)
+# ==============================================================================
+fig, axes = plt.subplots(1, 2, figsize=(18, 6))
+
+# Gráfica 1: Segmentación K-Means de Transacciones
+sns.scatterplot(
+    data=df_gold_final, 
+    x='fecha_gasto_clean', 
+    y='monto_usd_final', 
+    hue='categoria_gasto_ml', 
+    palette='Set1', 
+    style='es_anomalia_ml', 
+    s=100, 
+    ax=axes[0]
+)
+axes[0].set_title("1. Clusterización K-Means & Anomalías (Isolation Forest)", fontsize=12, fontweight='bold')
+axes[0].set_ylabel("Monto Limpio USD")
+axes[0].tick_params(axis='x', rotation=30)
+
+# Gráfica 2: Distribución del Data Mart por Categorías ML
+sns.boxplot(
+    data=df_gold_final, 
+    x='categoria_gasto_ml', 
+    y='monto_usd_final', 
+    palette='Blues', 
+    ax=axes[1]
+)
+axes[1].set_title("2. Distribución de Presupuesto por Perfil ML", fontsize=12, fontweight='bold')
+axes[1].set_ylabel("Monto USD")
+
+plt.suptitle("PANEL DE DECISIÓN EMPRESARIAL Y MACHINE LEARNING (CAPA GOLD)", fontsize=16, fontweight='bold')
+plt.show()
+
+# ==============================================================================
+# 💾 EXPORTACIÓN DE RESULTADOS FINALES (COLAB DOWNLOAD)
+# ==============================================================================
+df_gold_final.to_csv("historial_gastos_capa_gold.csv", index=False)
+print("\n📁 Archivo 'historial_gastos_capa_gold.csv' guardado y listo para exportar a PowerBI, Metabase o PostgreSQL.")

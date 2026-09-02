@@ -1,0 +1,476 @@
+id_transaccion,fecha_gasto,concepto,proveedor,monto_usd,metodo_pago,estado_pago
+TXN-2026-0376,2026-08-17,Servicio de Internet Fibra Óptica,Beeks Financial Cloud / MQ Hosting,125.15,Transferencia Bancaria,PAGADO
+TXN-2026-0423,2026-01-20,Servicios de Nube AWS,ETB / Tigo Telecomunicaciones,977.98,Pse / Débito,Pagado
+TXN-2026-0010,2026-05-30,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,-122.73,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0074,2026-01-31,Alimento Medicado Mascotas,Transportes del Darién S.A.,747.83,Efectivo,PAGADO
+TXN-2026-0355,2026-01-15,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,393.71,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0034,2026-05-22,Suscripción OpenAI API,Amazon Web Services LLC,1080.29,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0079,2026-03-15,Publicidad Meta Ads (Instagram/FB),PetShop Supply Co.,491.97,Pse / Débito,Pagado
+TXN-2026-0442,2026-05-30,Suscripción Canva Pro / Marketing,ETB / Tigo Telecomunicaciones,448.29,Efectivo,PAGADO
+TXN-2026-0118,2026-04-27,Alimento Medicado Mascotas,Microsoft Ireland Operations,150.58,Pse / Débito,Pendiente
+TXN-2026-0091,2026.04.16,Honorarios Consultoría Quant,Meta Platforms Ireland Ltd,976.52,Transferencia Bancaria,Pagado
+TXN-2026-0078,2026-05-20,Suscripción OpenAI API,Beeks Financial Cloud / MQ Hosting,99.62,PayPal,Error Banco
+TXN-2026-0262,2026-02-17,COMPRA SENSORES LORAWAN AGROTECH,Meta Platforms Ireland Ltd,809.78,PayPal,pagado
+TXN-2026-0127,2026.06.08,Servicios Nube Azure,Beeks Financial Cloud / MQ Hosting,517.46,Efectivo,Error Banco
+TXN-2026-0251,2026-01-30,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,228.21,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0318,2026-02-14,Servicio de Internet Fibra Óptica,Distribuidora Estética Mascotas SAS,841.69,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0287,2026-02-22,Mantenimiento Servidor Local / Ngrok,Milesight IoT Co.,,Transferencia Bancaria,Pagado
+TXN-2026-0077,2026-03-14,Publicidad Meta Ads (Instagram/FB),Microsoft Ireland Operations,1109.83,Pse / Débito,Pendiente
+TXN-2026-0105,2026-07-05,Alimento Medicado Mascotas,ETB / Tigo Telecomunicaciones,$951.96,Pse / Débito,Aprobado
+TXN-2026-0295,2026-03-09,  Servicio de Internet Fibra Óptica   ,MercadoLibre Colombia,554.41,Efectivo,Pendiente
+TXN-2026-0431,2026-02-08,Insumos Peluquería Canina HeisGroomer,Transportes del Darién S.A.,155.22,PayPal,PAGADO
+TXN-2026-0083,2026-05-07,4lim3nto m3dic4do m4scot4s,ETB / Tigo Telecomunicaciones,119.35,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0001,2026-06-13,Honorarios Consultoría Quant,Beeks Financial Cloud / MQ Hosting,180.35,Pse / Débito,
+TXN-2026-0249,2026-04-21,Suscripción Canva Pro / Marketing,MercadoLibre Colombia,176.31,Transferencia Bancaria,Pendiente
+TXN-2026-0012,2026-01-30,Mantenimiento Servidor Local / Ngrok,Beeks Financial Cloud / MQ Hosting,418.11,Transferencia Bancaria,CANCELADO
+TXN-2026-0372,2026-02-21,Alimento Medicado Mascotas,Beeks Financial Cloud / MQ Hosting,664.54,Efectivo,
+TXN-2026-0031,2026-08-16,Mantenimiento Servidor Local / Ngrok,OpenAI LLC,731.72,Transferencia Bancaria,Error Banco
+TXN-2026-0434,2026-08-13,Transporte Logístico Urabá,Beeks Financial Cloud / MQ Hosting,271.66,Efectivo,Pendiente
+TXN-2026-0064,2026-04-30,Honorarios Consultoría Quant,Transportes del Darién S.A.,1024.28,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0102,2026-06-18,SUSCRIPCIÓN OPENAI API,MercadoLibre Colombia,-758.54,,Aprobado
+TXN-2026-0125,2026-08-11,  Transporte Logístico Urabá   ,Agropecuaria y Mascotas Mutatá,893.05,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0298,2026-07-04,Suscripción Canva Pro / Marketing,Microsoft Ireland Operations,156.49,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0431,2026-02-08,Insumos Peluquería Canina HeisGroomer,Transportes del Darién S.A.,155.22,PayPal,PAGADO
+TXN-2026-0429,2026-06-17,Servicio de Internet Fibra Óptica,MercadoLibre Colombia,107.24,Transferencia Bancaria,Aprobado
+TXN-2026-0080,2026-08-16,Insumos Peluquería Canina HeisGroomer,Transportes del Darién S.A.,123.22,Pse / Débito,Pagado
+TXN-2026-0173,2026-04-26,,Distribuidora Estética Mascotas SAS,997.43,Pse / Débito,Pendiente
+TXN-2026-0019,2026-03-13,,ETB / Tigo Telecomunicaciones,1123.58,Efectivo,PAGADO
+TXN-2026-0422,2026-05-22,TRANSPORTE LOGÍSTICO URABÁ,Transportes del Darién S.A.,347.53,Pse / Débito,CANCELADO
+TXN-2026-0281,2026-06-29,ALIMENTO MEDICADO MASCOTAS,MercadoLibre Colombia,127.79,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0415,2026-06-23,Herramientas de Hardware IoT (Raspberry/ESP32),PetShop Supply Co.,$1149.51,Pse / Débito,
+TXN-2026-0040,2026-06-02,Honorarios Consultoría Quant,Distribuidora Estética Mascotas SAS,1181.32,Pse / Débito,Pagado
+TXN-2026-0138,2026-05-29,Herramientas de Hardware IoT (Raspberry/ESP32),PetShop Supply Co.,547.93,Transferencia Bancaria,PAGADO
+TXN-2026-0158,2026-06-18,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,-409.03,Pse / Débito,CANCELADO
+TXN-2026-0071,2026-07-01,Licencias MetaTrader 5 / VPS Trading,Amazon Web Services LLC,670.73,Transferencia Bancaria,Error Banco
+TXN-2026-0056,2026-04-11,TRANSPORTE LOGÍSTICO URABÁ,Amazon Web Services LLC,522.91,Transferencia Bancaria,PAGADO
+TXN-2026-0246,2026-05-24,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,827.1,PayPal,PAGADO
+TXN-2026-0412,2026-04-21,ALIMENTO MEDICADO MASCOTAS,MercadoLibre Colombia,21.99,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0336,2026-01-16,Suscripción Canva Pro / Marketing,ETB / Tigo Telecomunicaciones,649.58,Efectivo,Pendiente
+TXN-2026-0439,2026-06-28,Compra Sensores LoRaWAN AgroTech,Meta Platforms Ireland Ltd,466.77,Pse / Débito,Pendiente
+TXN-2026-0302,2026-01-03,Servicios de Nube AWS,MercadoLibre Colombia,889.63,Transferencia Bancaria,Pendiente
+TXN-2026-0076,2026-02-10,Mantenimiento Servidor Local / Ngrok,Microsoft Ireland Operations,499.09,Efectivo,Pendiente
+TXN-2026-0094,2026-03-23,Herramientas de Hardware IoT (Raspberry/ESP32),Meta Platforms Ireland Ltd,,PayPal,CANCELADO
+TXN-2026-0409,2026-01-22,Suscripción OpenAI API,ETB / Tigo Telecomunicaciones,757.92,Transferencia Bancaria,PAGADO
+TXN-2026-0411,2026-01-23,Suscripción OpenAI API,Beeks Financial Cloud / MQ Hosting,696.33,PayPal,PAGADO
+TXN-2026-0031,2026-08-16,Mantenimiento Servidor Local / Ngrok,OpenAI LLC,731.72,Transferencia Bancaria,Error Banco
+TXN-2026-0073,2026-01-17,Servicios Nube Azure,Transportes del Darién S.A.,78.53,Pse / Débito,Pagado
+TXN-2026-0133,2026-04-12,Honorarios Consultoría Quant,Distribuidora Estética Mascotas SAS,,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0420,2026-05-30,Servicio de Internet Fibra Óptica,Distribuidora Estética Mascotas SAS,1151.01,PayPal,Pendiente
+TXN-2026-0266,2026-03-22,Servicio de Internet Fibra Óptica,Amazon Web Services LLC,1142.93,Transferencia Bancaria,pagado
+TXN-2026-0290,2026-03-15,Mantenimiento Servidor Local / Ngrok,Agropecuaria y Mascotas Mutatá,491.7,Pse / Débito,Aprobado
+TXN-2026-0040,2026-06-02,Honorarios Consultoría Quant,Distribuidora Estética Mascotas SAS,1181.32,Pse / Débito,Pagado
+TXN-2026-0077,2026-03-14,Publicidad Meta Ads (Instagram/FB),Microsoft Ireland Operations,1109.83,Pse / Débito,Pendiente
+TXN-2026-0074,2026-01-31,Alimento Medicado Mascotas,Transportes del Darién S.A.,747.83,Efectivo,PAGADO
+TXN-2026-0177,2026-01-12,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,264.81,Pse / Débito,PAGADO
+TXN-2026-0141,2026-06-15,Insumos Peluquería Canina HeisGroomer,Microsoft Ireland Operations,473.08,Pse / Débito,Aprobado
+TXN-2026-0427,2026-05-05,Licencias MetaTrader 5 / VPS Trading,Distribuidora Estética Mascotas SAS,807.27,PayPal,PAGADO
+TXN-2026-0239,2026-07-30,Servicios Nube Azure,Beeks Financial Cloud / MQ Hosting,299.96,Efectivo,pagado
+TXN-2026-0303,2026-01-16,Suscripción OpenAI API,PetShop Supply Co.,67.02,Pse / Débito,Aprobado
+TXN-2026-0276,2026-04-05,Publicidad Meta Ads (Instagram/FB),Distribuidora Estética Mascotas SAS,1044.66,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0158,2026-06-18,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,-409.03,Pse / Débito,CANCELADO
+TXN-2026-0154,2026-06-05,Servicios Nube Azure,Beeks Financial Cloud / MQ Hosting,159.39,Pse / Débito,Pagado
+TXN-2026-0232,2026-01-16,Transporte Logístico Urabá,Transportes del Darién S.A.,$796.25,Pse / Débito,
+TXN-2026-0334,2026-05-20,Insumos Peluquería Canina HeisGroomer,Agropecuaria y Mascotas Mutatá,543.24,Efectivo,Error Banco
+TXN-2026-0141,2026-06-15,Insumos Peluquería Canina HeisGroomer,Microsoft Ireland Operations,473.08,Pse / Débito,Aprobado
+TXN-2026-0418,2026-05-21,Mantenimiento Servidor Local / Ngrok,Microsoft Ireland Operations,9482.0,Pse / Débito,Aprobado
+TXN-2026-0016,2026-08-31,Licencias MetaTrader 5 / VPS Trading,ETB / Tigo Telecomunicaciones,516.42,Pse / Débito,CANCELADO
+TXN-2026-0149,2026-02-11,,Transportes del Darién S.A.,311.25,PayPal,Pagado
+TXN-2026-0369,2026-06-17,SERVICIOS DE NUBE AWS,PetShop Supply Co.,541.51,PayPal,Pendiente
+TXN-2026-0020,2026-02-18,Transporte Logístico Urabá,Agropecuaria y Mascotas Mutatá,502.16,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0308,2026-02-25,INSUMOS PELUQUERÍA CANINA HEISGROOMER,OpenAI LLC,309.14,,Aprobado
+TXN-2026-0317,2026-06-18,  Mantenimiento Servidor Local / Ngrok   ,PetShop Supply Co.,1195.72,Efectivo,Error Banco
+TXN-2026-0057,2026-04-27,Herramientas de Hardware IoT (Raspberry/ESP32),Agropecuaria y Mascotas Mutatá,1142.18,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0210,2026-08-07,Servicios Nube Azure,MercadoLibre Colombia,70603.0,Pse / Débito,Pagado
+TXN-2026-0125,2026-08-11,  Transporte Logístico Urabá   ,Agropecuaria y Mascotas Mutatá,893.05,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0419,2026-06-21,Servicios Nube Azure,Beeks Financial Cloud / MQ Hosting,1081.64,Efectivo,CANCELADO
+TXN-2026-0358,2026-07-09,Herramientas de Hardware IoT (Raspberry/ESP32),ETB / Tigo Telecomunicaciones,231.94,PayPal,Pendiente
+TXN-2026-0424,2026-05-20,Mantenimiento Servidor Local / Ngrok,Meta Platforms Ireland Ltd,191.13,Pse / Débito,Aprobado
+TXN-2026-0405,2026-07-21,Alimento Medicado Mascotas,ETB / Tigo Telecomunicaciones,123.96,Transferencia Bancaria,Aprobado
+TXN-2026-0026,2026-05-11,Suscripción OpenAI API,Microsoft Ireland Operations,815.13,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0212,2026-02-25,Servicios de Nube AWS,Agropecuaria y Mascotas Mutatá,90.56,Tarjeta de Crédito Corporativa,
+TXN-2026-0221,2026-04-15,Alimento Medicado Mascotas,OpenAI LLC,576.12,PayPal,Pendiente
+TXN-2026-0417,2026-02-06,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,245.28,Pse / Débito,Error Banco
+TXN-2026-0043,2026-03-17,Compra Sensores LoRaWAN AgroTech,Agropecuaria y Mascotas Mutatá,464.29,Transferencia Bancaria,Aprobado
+TXN-2026-0200,2026-05-27,Honorarios Consultoría Quant,PetShop Supply Co.,59.2,Efectivo,Pendiente
+TXN-2026-0155,2026-05-08,Servicios de Nube AWS,MercadoLibre Colombia,301.7,,Aprobado
+TXN-2026-0248,2026-02-20,suscripción op3n4i 4pi,Beeks Financial Cloud / MQ Hosting,483.89,Efectivo,Aprobado
+TXN-2026-0238,2026-03-13,s3rvicio d3 int3rn3t fibr4 óptic4,MercadoLibre Colombia,1115.59,Transferencia Bancaria,Error Banco
+TXN-2026-0204,2026-02-19,Suscripción Canva Pro / Marketing,MercadoLibre Colombia,994.98,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0230,2026-02-13,Mantenimiento Servidor Local / Ngrok,Meta Platforms Ireland Ltd,1068.9,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0397,,Licencias MetaTrader 5 / VPS Trading,OpenAI LLC,824.82,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0023,2026-02-12,Publicidad Meta Ads (Instagram/FB),Milesight IoT Co.,1084.39,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0312,2026-08-25,Suscripción Canva Pro / Marketing,PetShop Supply Co.,49.94,Transferencia Bancaria,Pendiente
+TXN-2026-0047,2026-08-15,Compra Sensores LoRaWAN AgroTech,PetShop Supply Co.,600.84,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0306,2026-08-30,HERRAMIENTAS DE HARDWARE IOT (RASPBERRY/ESP32),Transportes del Darién S.A.,140.2,PayPal,pagado
+TXN-2026-0337,2026-01-21,suscripción c4nv4 pro / m4rk3ting,PetShop Supply Co.,691.9,Pse / Débito,pagado
+TXN-2026-0416,2026-06-02,Mantenimiento Servidor Local / Ngrok,Microsoft Ireland Operations,901.73,PayPal,CANCELADO
+TXN-2026-0181,2026-04-18,Suscripción Canva Pro / Marketing,OpenAI LLC,1121.5,Transferencia Bancaria,PAGADO
+TXN-2026-0114,2026-04-02,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,,Efectivo,CANCELADO
+TXN-2026-0058,2026-03-31,  Servicios Nube Azure   ,MercadoLibre Colombia,51.77,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0319,2026-05-25,Compra Sensores LoRaWAN AgroTech,Meta Platforms Ireland Ltd,-223.03,Tarjeta de Crédito Corporativa,
+TXN-2026-0193,2026-05-17,Insumos Peluquería Canina HeisGroomer,MercadoLibre Colombia,869.3,PayPal,Pendiente
+TXN-2026-0399,2026-05-11,Herramientas de Hardware IoT (Raspberry/ESP32),PetShop Supply Co.,802.42,Efectivo,Error Banco
+TXN-2026-0025,2026-01-15,Mantenimiento Servidor Local / Ngrok,Amazon Web Services LLC,82.74,Pse / Débito,pagado
+TXN-2026-0018,2026-05-22,  Compra Sensores LoRaWAN AgroTech   ,Amazon Web Services LLC,762.86,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0067,2026-03-03,Transporte Logístico Urabá,PetShop Supply Co.,95463.0,Transferencia Bancaria,Pendiente
+TXN-2026-0156,2026-04-17,Transporte Logístico Urabá,Microsoft Ireland Operations,442.32,Pse / Débito,pagado
+TXN-2026-0087,2026-02-09,Honorarios Consultoría Quant,Beeks Financial Cloud / MQ Hosting,339.01,Efectivo,pagado
+TXN-2026-0032,2026-05-06,SUSCRIPCIÓN CANVA PRO / MARKETING,Amazon Web Services LLC,516.94,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0085,2026-01-14,Mantenimiento Servidor Local / Ngrok,OpenAI LLC,534.17,,CANCELADO
+TXN-2026-0401,2026-06-15,Servicio de Internet Fibra Óptica,ETB / Tigo Telecomunicaciones,247.82,Transferencia Bancaria,Pendiente
+TXN-2026-0186,2026-04-04,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,-607.59,Transferencia Bancaria,Error Banco
+TXN-2026-0209,2026-05-16,SERVICIOS NUBE AZURE,Transportes del Darién S.A.,997.1,Transferencia Bancaria,Pendiente
+TXN-2026-0407,2026-08-20,Servicio de Internet Fibra Óptica,Milesight IoT Co.,823.82,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0132,2026-08-31,Suscripción Canva Pro / Marketing,PetShop Supply Co.,119.43,Transferencia Bancaria,PAGADO
+TXN-2026-0095,2026-01-26,Honorarios Consultoría Quant,Microsoft Ireland Operations,837.39,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0263,2026-01-30,Suscripción Canva Pro / Marketing,Meta Platforms Ireland Ltd,979.28,PayPal,pagado
+TXN-2026-0383,2026-07-12,Compra Sensores LoRaWAN AgroTech,Distribuidora Estética Mascotas SAS,74.67,Efectivo,Pendiente
+TXN-2026-0256,2026-01-26,Mantenimiento Servidor Local / Ngrok,PetShop Supply Co.,702.91,Efectivo,PAGADO
+TXN-2026-0176,2026-06-01,Suscripción OpenAI API,OpenAI LLC,868.95,,
+TXN-2026-0375,2026-03-22,Servicios Nube Azure,Microsoft Ireland Operations,$1070.0,Transferencia Bancaria,Pendiente
+TXN-2026-0226,2026-05-22,Licencias MetaTrader 5 / VPS Trading,Agropecuaria y Mascotas Mutatá,783.73,PayPal,PAGADO
+TXN-2026-0326,2026-08-15,Servicios de Nube AWS,Beeks Financial Cloud / MQ Hosting,836.41,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0387,2026-07-03,HONORARIOS CONSULTORÍA QUANT,Meta Platforms Ireland Ltd,914.79,PayPal,CANCELADO
+TXN-2026-0006,2026-01-26,Publicidad Meta Ads (Instagram/FB),MercadoLibre Colombia,207.75,PayPal,CANCELADO
+TXN-2026-0117,2026-01-21,,Microsoft Ireland Operations,754.82,PayPal,pagado
+TXN-2026-0046,2026-03-02,,Milesight IoT Co.,69.76,Pse / Débito,Pagado
+TXN-2026-0017,2026-03-21,Transporte Logístico Urabá,MercadoLibre Colombia,1081.04,Transferencia Bancaria,
+TXN-2026-0440,2026-07-16,Suscripción Canva Pro / Marketing,Microsoft Ireland Operations,1053.97,,CANCELADO
+TXN-2026-0341,2026-07-14,Servicios Nube Azure,Microsoft Ireland Operations,134.67,Pse / Débito,PAGADO
+TXN-2026-0004,2026-08-05,Licencias MetaTrader 5 / VPS Trading,Amazon Web Services LLC,650.43,Efectivo,Aprobado
+TXN-2026-0416,2026-06-02,Mantenimiento Servidor Local / Ngrok,Microsoft Ireland Operations,901.73,PayPal,CANCELADO
+TXN-2026-0061,2026-06-01,TRANSPORTE LOGÍSTICO URABÁ,Milesight IoT Co.,930.39,Pse / Débito,Error Banco
+TXN-2026-0111,2026-04-12,SERVICIOS NUBE AZURE,Meta Platforms Ireland Ltd,266.35,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0389,2026-01-31,Alimento Medicado Mascotas,Milesight IoT Co.,940.98,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0313,2026-04-25,Servicios de Nube AWS,Transportes del Darién S.A.,306.25,Efectivo,PAGADO
+TXN-2026-0030,2026-05-20,Servicio de Internet Fibra Óptica,MercadoLibre Colombia,806.42,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0183,2026-03-14,Suscripción Canva Pro / Marketing,MercadoLibre Colombia,$353.61,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0393,2026-04-26,Suscripción OpenAI API,Agropecuaria y Mascotas Mutatá,1065.43,Pse / Débito,CANCELADO
+TXN-2026-0027,2026.06.02,Servicios Nube Azure,Agropecuaria y Mascotas Mutatá,684.79,PayPal,CANCELADO
+TXN-2026-0008,,Suscripción Canva Pro / Marketing,Amazon Web Services LLC,,Pse / Débito,Aprobado
+TXN-2026-0433,2026-01-11,Suscripción OpenAI API,Amazon Web Services LLC,1108.1,Efectivo,pagado
+TXN-2026-0109,2026-05-19,Honorarios Consultoría Quant,PetShop Supply Co.,50664.0,Efectivo,
+TXN-2026-0443,2026-05-23,Insumos Peluquería Canina HeisGroomer,ETB / Tigo Telecomunicaciones,315.73,PayPal,PAGADO
+TXN-2026-0448,2026-07-25,Compra Sensores LoRaWAN AgroTech,Amazon Web Services LLC,620.0,Pse / Débito,Pagado
+TXN-2026-0119,2026-08-16,Insumos Peluquería Canina HeisGroomer,Meta Platforms Ireland Ltd,879.59,PayPal,Aprobado
+TXN-2026-0115,2026-04-25,MANTENIMIENTO SERVIDOR LOCAL / NGROK,Transportes del Darién S.A.,612.05,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0182,2026-04-30,lic3nci4s m3t4tr4d3r 5 / vps tr4ding,Meta Platforms Ireland Ltd,1135.1,Transferencia Bancaria,Aprobado
+TXN-2026-0223,2026-08-05,Mantenimiento Servidor Local / Ngrok,PetShop Supply Co.,76.07,Pse / Débito,Error Banco
+TXN-2026-0254,2026.05.20,Insumos Peluquería Canina HeisGroomer,PetShop Supply Co.,651.23,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0353,2026-01-02,Transporte Logístico Urabá,Distribuidora Estética Mascotas SAS,718.62,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0363,2026-05-28,,Microsoft Ireland Operations,528.95,Efectivo,
+TXN-2026-0174,2026-08-22,Suscripción Canva Pro / Marketing,Microsoft Ireland Operations,375.39,Transferencia Bancaria,pagado
+TXN-2026-0449,17/06/2026,Suscripción OpenAI API,Microsoft Ireland Operations,938.91,Efectivo,Pendiente
+TXN-2026-0194,2026-03-13,Compra Sensores LoRaWAN AgroTech,Beeks Financial Cloud / MQ Hosting,850.31,Efectivo,Aprobado
+TXN-2026-0425,2026-05-09,Alimento Medicado Mascotas,Distribuidora Estética Mascotas SAS,800.27,Pse / Débito,Error Banco
+TXN-2026-0142,2026-06-19,Insumos Peluquería Canina HeisGroomer,Beeks Financial Cloud / MQ Hosting,842.7,Pse / Débito,Pagado
+TXN-2026-0424,2026-05-20,Mantenimiento Servidor Local / Ngrok,Meta Platforms Ireland Ltd,191.13,Pse / Débito,Aprobado
+TXN-2026-0068,2026-05-29,Mantenimiento Servidor Local / Ngrok,ETB / Tigo Telecomunicaciones,1196.01,PayPal,Aprobado
+TXN-2026-0374,2026-03-07,Publicidad Meta Ads (Instagram/FB),Beeks Financial Cloud / MQ Hosting,74.35,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0169,2026-04-26,Honorarios Consultoría Quant,Meta Platforms Ireland Ltd,975.46,PayPal,CANCELADO
+TXN-2026-0359,2026-07-10,Alimento Medicado Mascotas,Distribuidora Estética Mascotas SAS,708.9,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0298,2026-07-04,Suscripción Canva Pro / Marketing,Microsoft Ireland Operations,156.49,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0269,2026-03-10,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,911.79,Efectivo,PAGADO
+TXN-2026-0110,2026-04-05,Publicidad Meta Ads (Instagram/FB),Milesight IoT Co.,132.74,Pse / Débito,CANCELADO
+TXN-2026-0323,2026-08-26,Insumos Peluquería Canina HeisGroomer,Milesight IoT Co.,980.13,PayPal,
+TXN-2026-0146,2026-06-02,Suscripción OpenAI API,OpenAI LLC,928.75,Transferencia Bancaria,Pagado
+TXN-2026-0321,2026-08-23,Servicios Nube Azure,ETB / Tigo Telecomunicaciones,1153.26,Efectivo,Aprobado
+TXN-2026-0153,2026-02-05,Publicidad Meta Ads (Instagram/FB),Meta Platforms Ireland Ltd,$1088.44,Transferencia Bancaria,pagado
+TXN-2026-0196,2026.03.16,Honorarios Consultoría Quant,Microsoft Ireland Operations,539.22,Efectivo,Error Banco
+TXN-2026-0332,,SERVICIOS DE NUBE AWS,Agropecuaria y Mascotas Mutatá,991.32,Efectivo,Pagado
+TXN-2026-0084,2026-07-31,Transporte Logístico Urabá,ETB / Tigo Telecomunicaciones,79.23,Pse / Débito,CANCELADO
+TXN-2026-0219,2026-07-29,Licencias MetaTrader 5 / VPS Trading,OpenAI LLC,632.68,PayPal,pagado
+TXN-2026-0166,2026-06-15,4lim3nto m3dic4do m4scot4s,Transportes del Darién S.A.,196.82,PayPal,Error Banco
+TXN-2026-0282,24/04/2026,Honorarios Consultoría Quant,Distribuidora Estética Mascotas SAS,1185.96,Transferencia Bancaria,Pendiente
+TXN-2026-0205,2026-02-05,Compra Sensores LoRaWAN AgroTech,Amazon Web Services LLC,294.09,PayPal,CANCELADO
+TXN-2026-0075,2026-05-31,Licencias MetaTrader 5 / VPS Trading,Transportes del Darién S.A.,737.41,Transferencia Bancaria,Aprobado
+TXN-2026-0250,2026-03-23,Honorarios Consultoría Quant,MercadoLibre Colombia,697.42,Efectivo,Error Banco
+TXN-2026-0396,2026-06-22,Suscripción Canva Pro / Marketing,ETB / Tigo Telecomunicaciones,1019.05,Pse / Débito,PAGADO
+TXN-2026-0267,2026-05-07,Publicidad Meta Ads (Instagram/FB),Agropecuaria y Mascotas Mutatá,540.96,,Error Banco
+TXN-2026-0120,2026-06-25,Servicios Nube Azure,Microsoft Ireland Operations,12548.0,PayPal,pagado
+TXN-2026-0278,2026-05-21,Servicio de Internet Fibra Óptica,Meta Platforms Ireland Ltd,1074.57,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0285,2026-08-09,Servicios Nube Azure,OpenAI LLC,713.65,Efectivo,Pendiente
+TXN-2026-0228,2026-03-08,Servicio de Internet Fibra Óptica,Transportes del Darién S.A.,364.8,Transferencia Bancaria,Error Banco
+TXN-2026-0380,2026-03-08,Servicios de Nube AWS,PetShop Supply Co.,636.91,Pse / Débito,CANCELADO
+TXN-2026-0392,2026-04-10,Servicio de Internet Fibra Óptica,Distribuidora Estética Mascotas SAS,470.83,Transferencia Bancaria,Aprobado
+TXN-2026-0229,2026-05-21,Transporte Logístico Urabá,Distribuidora Estética Mascotas SAS,988.59,Efectivo,CANCELADO
+TXN-2026-0211,2026-05-12,Servicio de Internet Fibra Óptica,Amazon Web Services LLC,812.23,Tarjeta de Crédito Corporativa,
+TXN-2026-0366,2026-03-16,Mantenimiento Servidor Local / Ngrok,Transportes del Darién S.A.,528.89,Transferencia Bancaria,PAGADO
+TXN-2026-0398,2026.05.19,SUSCRIPCIÓN CANVA PRO / MARKETING,Meta Platforms Ireland Ltd,1043.62,Transferencia Bancaria,pagado
+TXN-2026-0037,2026-03-05,HERRAMIENTAS DE HARDWARE IOT (RASPBERRY/ESP32),PetShop Supply Co.,1048.52,Transferencia Bancaria,PAGADO
+TXN-2026-0197,2026-08-27,LICENCIAS METATRADER 5 / VPS TRADING,OpenAI LLC,892.96,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0140,2026-05-15,Suscripción OpenAI API,Distribuidora Estética Mascotas SAS,350.23,PayPal,Pagado
+TXN-2026-0348,2026-04-12,s3rvicios nub3 4zur3,MercadoLibre Colombia,456.37,Transferencia Bancaria,PAGADO
+TXN-2026-0357,2026-06-13,Transporte Logístico Urabá,Distribuidora Estética Mascotas SAS,1016.82,Pse / Débito,Pagado
+TXN-2026-0403,07/03/2026,Publicidad Meta Ads (Instagram/FB),PetShop Supply Co.,62.33,Pse / Débito,CANCELADO
+TXN-2026-0272,2026-07-28,Servicios de Nube AWS,Transportes del Darién S.A.,348.09,PayPal,Aprobado
+TXN-2026-0060,2026-07-29,Licencias MetaTrader 5 / VPS Trading,Microsoft Ireland Operations,1115.73,Efectivo,CANCELADO
+TXN-2026-0112,2026-02-02,Compra Sensores LoRaWAN AgroTech,Microsoft Ireland Operations,671.74,Transferencia Bancaria,Pendiente
+TXN-2026-0299,2026-01-12,Servicios Nube Azure,Meta Platforms Ireland Ltd,931.63,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0430,2026-03-30,publicid4d m3t4 4ds (inst4gr4m/fb),Transportes del Darién S.A.,1060.21,Transferencia Bancaria,CANCELADO
+TXN-2026-0007,2026-06-05,Mantenimiento Servidor Local / Ngrok,PetShop Supply Co.,562.78,Pse / Débito,Aprobado
+TXN-2026-0365,2026-02-27,,Beeks Financial Cloud / MQ Hosting,469.51,Transferencia Bancaria,Pagado
+TXN-2026-0330,2026.06.30,Transporte Logístico Urabá,OpenAI LLC,,PayPal,Pendiente
+TXN-2026-0159,2026-07-19,Honorarios Consultoría Quant,Meta Platforms Ireland Ltd,,,Pendiente
+TXN-2026-0151,2026-02-26,Insumos Peluquería Canina HeisGroomer,Amazon Web Services LLC,484.8,Efectivo,Aprobado
+TXN-2026-0178,2026-05-20,Licencias MetaTrader 5 / VPS Trading,Meta Platforms Ireland Ltd,971.71,Efectivo,Pagado
+TXN-2026-0185,2026-05-21,Servicio de Internet Fibra Óptica,MercadoLibre Colombia,16747.0,PayPal,Aprobado
+TXN-2026-0011,2026-04-19,Alimento Medicado Mascotas,Agropecuaria y Mascotas Mutatá,569.64,Pse / Débito,Pagado
+TXN-2026-0432,2026-05-03,Suscripción OpenAI API,MercadoLibre Colombia,-41.6,Pse / Débito,Pendiente
+TXN-2026-0104,2026-03-07,Publicidad Meta Ads (Instagram/FB),Beeks Financial Cloud / MQ Hosting,416.38,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0082,2026-04-22,Publicidad Meta Ads (Instagram/FB),Microsoft Ireland Operations,498.89,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0039,2026-05-11,Suscripción Canva Pro / Marketing,ETB / Tigo Telecomunicaciones,47.71,PayPal,
+TXN-2026-0300,2026-03-16,Licencias MetaTrader 5 / VPS Trading,PetShop Supply Co.,564.75,Efectivo,Error Banco
+TXN-2026-0168,2026-01-31,Licencias MetaTrader 5 / VPS Trading,PetShop Supply Co.,1195.69,Efectivo,Pendiente
+TXN-2026-0446,2026-08-26,Servicios Nube Azure,Microsoft Ireland Operations,454.44,Efectivo,PAGADO
+TXN-2026-0279,2026-01-05,Suscripción Canva Pro / Marketing,OpenAI LLC,15.8,Transferencia Bancaria,Pendiente
+TXN-2026-0199,2026-08-28,Publicidad Meta Ads (Instagram/FB),Meta Platforms Ireland Ltd,910.75,PayPal,Error Banco
+TXN-2026-0384,2026-04-24,Publicidad Meta Ads (Instagram/FB),Microsoft Ireland Operations,544.78,Efectivo,Pagado
+TXN-2026-0235,2026-06-28,Transporte Logístico Urabá,Microsoft Ireland Operations,1031.99,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0232,2026-01-16,Transporte Logístico Urabá,Transportes del Darién S.A.,$796.25,Pse / Débito,
+TXN-2026-0195,2026-08-28,,Beeks Financial Cloud / MQ Hosting,816.8,Efectivo,Error Banco
+TXN-2026-0090,2026-05-22,Alimento Medicado Mascotas,Meta Platforms Ireland Ltd,1045.48,Transferencia Bancaria,Pendiente
+TXN-2026-0147,2026-06-23,Publicidad Meta Ads (Instagram/FB),Transportes del Darién S.A.,902.02,Pse / Débito,Error Banco
+TXN-2026-0164,2026-03-31,Honorarios Consultoría Quant,Distribuidora Estética Mascotas SAS,530.4,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0245,2026-04-01,Servicio de Internet Fibra Óptica,Transportes del Darién S.A.,$1038.51,Efectivo,Pagado
+TXN-2026-0148,2026-08-20,Insumos Peluquería Canina HeisGroomer,MercadoLibre Colombia,1181.56,PayPal,pagado
+TXN-2026-0003,2026-07-27,Herramientas de Hardware IoT (Raspberry/ESP32),OpenAI LLC,418.2,PayPal,PAGADO
+TXN-2026-0093,2026-01-20,Licencias MetaTrader 5 / VPS Trading,Distribuidora Estética Mascotas SAS,48602.0,PayPal,Error Banco
+TXN-2026-0382,2026-08-03,s3rvicio d3 int3rn3t fibr4 óptic4,Amazon Web Services LLC,1122.23,Efectivo,Error Banco
+TXN-2026-0070,2026-07-05,Herramientas de Hardware IoT (Raspberry/ESP32),ETB / Tigo Telecomunicaciones,1176.91,PayPal,Pendiente
+TXN-2026-0273,2026-03-10,Mantenimiento Servidor Local / Ngrok,MercadoLibre Colombia,175.67,Efectivo,Aprobado
+TXN-2026-0124,2026-06-05,Suscripción Canva Pro / Marketing,PetShop Supply Co.,228.79,PayPal,
+TXN-2026-0352,2026-04-19,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,273.58,Pse / Débito,PAGADO
+TXN-2026-0097,2026-06-24,Servicio de Internet Fibra Óptica,OpenAI LLC,770.92,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0144,03/04/2026,Licencias MetaTrader 5 / VPS Trading,OpenAI LLC,419.95,Transferencia Bancaria,Pendiente
+TXN-2026-0240,2026-07-13,Herramientas de Hardware IoT (Raspberry/ESP32),PetShop Supply Co.,608.44,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0361,2026-08-07,Compra Sensores LoRaWAN AgroTech,Distribuidora Estética Mascotas SAS,689.74,Efectivo,Error Banco
+TXN-2026-0342,2026-06-17,s3rvicio d3 int3rn3t fibr4 óptic4,Meta Platforms Ireland Ltd,341.37,Pse / Débito,
+TXN-2026-0292,2026-08-05,Compra Sensores LoRaWAN AgroTech,Microsoft Ireland Operations,152.44,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0098,2026-06-23,Servicios Nube Azure,Meta Platforms Ireland Ltd,1185.37,Efectivo,PAGADO
+TXN-2026-0408,2026-01-07,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,617.85,PayPal,Pendiente
+TXN-2026-0069,2026-03-01,COMPRA SENSORES LORAWAN AGROTECH,Distribuidora Estética Mascotas SAS,650.0,Transferencia Bancaria,CANCELADO
+TXN-2026-0024,2026-07-20,Alimento Medicado Mascotas,PetShop Supply Co.,1194.58,Efectivo,Aprobado
+TXN-2026-0038,2026-07-30,compr4 s3nsor3s lor4w4n 4grot3ch,Milesight IoT Co.,243.86,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0145,2026-03-17,Servicios Nube Azure,ETB / Tigo Telecomunicaciones,1004.62,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0123,2026-04-05,Licencias MetaTrader 5 / VPS Trading,Transportes del Darién S.A.,523.5,Pse / Débito,CANCELADO
+TXN-2026-0184,2026-07-15,  Servicios de Nube AWS   ,Agropecuaria y Mascotas Mutatá,680.75,PayPal,pagado
+TXN-2026-0203,2026-07-27,Suscripción OpenAI API,PetShop Supply Co.,319.86,PayPal,pagado
+TXN-2026-0247,2026-02-12,Alimento Medicado Mascotas,Beeks Financial Cloud / MQ Hosting,106.15,Transferencia Bancaria,PAGADO
+TXN-2026-0291,2026-01-21,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,478.02,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0305,2026-03-02,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,480.65,PayPal,Aprobado
+TXN-2026-0335,2026-01-16,HONORARIOS CONSULTORÍA QUANT,MercadoLibre Colombia,806.75,Efectivo,pagado
+TXN-2026-0370,2026-06-25,Licencias MetaTrader 5 / VPS Trading,Agropecuaria y Mascotas Mutatá,800.04,Pse / Débito,PAGADO
+TXN-2026-0378,2026-08-30,Servicios Nube Azure,Agropecuaria y Mascotas Mutatá,586.97,Efectivo,PAGADO
+TXN-2026-0391,2026-08-28,Servicio de Internet Fibra Óptica,Meta Platforms Ireland Ltd,940.58,Pse / Débito,Error Banco
+TXN-2026-0126,2026-04-27,Insumos Peluquería Canina HeisGroomer,Beeks Financial Cloud / MQ Hosting,935.55,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0288,2026-06-13,Mantenimiento Servidor Local / Ngrok,Amazon Web Services LLC,1121.7,Pse / Débito,pagado
+TXN-2026-0224,2026-07-25,Honorarios Consultoría Quant,MercadoLibre Colombia,583.08,PayPal,Pagado
+TXN-2026-0400,2026-03-22,Servicios de Nube AWS,Amazon Web Services LLC,255.66,Efectivo,CANCELADO
+TXN-2026-0220,2026-08-22,Transporte Logístico Urabá,Agropecuaria y Mascotas Mutatá,70.56,Efectivo,Aprobado
+TXN-2026-0130,2026-05-17,Mantenimiento Servidor Local / Ngrok,ETB / Tigo Telecomunicaciones,,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0402,2026-01-20,Suscripción OpenAI API,PetShop Supply Co.,461.98,Pse / Débito,Pendiente
+TXN-2026-0275,2026-06-10,Publicidad Meta Ads (Instagram/FB),Microsoft Ireland Operations,105795.0,Pse / Débito,CANCELADO
+TXN-2026-0445,2026-07-25,Honorarios Consultoría Quant,MercadoLibre Colombia,205.47,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0404,2026-06-19,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,101.36,Pse / Débito,Pendiente
+TXN-2026-0447,2026-05-14,Servicio de Internet Fibra Óptica,Amazon Web Services LLC,986.97,,Error Banco
+TXN-2026-0339,2026-08-02,Insumos Peluquería Canina HeisGroomer,PetShop Supply Co.,94.41,Efectivo,Error Banco
+TXN-2026-0377,2026-03-11,Honorarios Consultoría Quant,Meta Platforms Ireland Ltd,783.88,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0350,2026-02-24,Transporte Logístico Urabá,Milesight IoT Co.,333.86,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0325,2026-05-08,Honorarios Consultoría Quant,Microsoft Ireland Operations,1179.12,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0113,02/06/2026,Suscripción Canva Pro / Marketing,OpenAI LLC,655.16,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0180,2026-05-12,Insumos Peluquería Canina HeisGroomer,Milesight IoT Co.,331.95,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0368,2026-02-01,Transporte Logístico Urabá,Amazon Web Services LLC,773.78,,Pagado
+TXN-2026-0324,2026-06-29,4lim3nto m3dic4do m4scot4s,Transportes del Darién S.A.,728.83,Pse / Débito,pagado
+TXN-2026-0315,2026-04-02,Herramientas de Hardware IoT (Raspberry/ESP32),Meta Platforms Ireland Ltd,685.3,PayPal,Aprobado
+TXN-2026-0448,2026-07-25,Compra Sensores LoRaWAN AgroTech,Amazon Web Services LLC,620.0,Pse / Débito,Pagado
+TXN-2026-0343,2026-08-16,  Honorarios Consultoría Quant   ,Milesight IoT Co.,578.13,,Error Banco
+TXN-2026-0234,2026-03-03,Mantenimiento Servidor Local / Ngrok,Beeks Financial Cloud / MQ Hosting,331.78,PayPal,PAGADO
+TXN-2026-0297,2026-05-01,Suscripción OpenAI API,OpenAI LLC,1031.12,Efectivo,Pendiente
+TXN-2026-0165,2026-05-12,Transporte Logístico Urabá,OpenAI LLC,184.19,,Pagado
+TXN-2026-0137,2026-05-10,publicid4d m3t4 4ds (inst4gr4m/fb),Meta Platforms Ireland Ltd,451.95,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0198,,Alimento Medicado Mascotas,Distribuidora Estética Mascotas SAS,134.15,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0259,2026-07-01,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,817.41,Transferencia Bancaria,pagado
+TXN-2026-0233,2026-07-04,Licencias MetaTrader 5 / VPS Trading,Amazon Web Services LLC,841.96,Transferencia Bancaria,Pagado
+TXN-2026-0116,2026-03-19,Servicios de Nube AWS,Amazon Web Services LLC,1019.05,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0121,2026-05-24,Transporte Logístico Urabá,Microsoft Ireland Operations,1050.22,Efectivo,CANCELADO
+TXN-2026-0333,2026-06-13,Servicios Nube Azure,Meta Platforms Ireland Ltd,380.4,Efectivo,Aprobado
+TXN-2026-0225,2026-02-18,Servicios Nube Azure,PetShop Supply Co.,582.52,Pse / Débito,PAGADO
+TXN-2026-0385,2026.04.16,Mantenimiento Servidor Local / Ngrok,Amazon Web Services LLC,953.26,PayPal,pagado
+TXN-2026-0322,2026-02-04,Honorarios Consultoría Quant,Agropecuaria y Mascotas Mutatá,1153.38,Transferencia Bancaria,pagado
+TXN-2026-0128,2026-03-30,Licencias MetaTrader 5 / VPS Trading,MercadoLibre Colombia,591.66,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0286,2026-06-15,Mantenimiento Servidor Local / Ngrok,Transportes del Darién S.A.,735.0,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0394,2026-05-22,Compra Sensores LoRaWAN AgroTech,Milesight IoT Co.,359.34,Transferencia Bancaria,CANCELADO
+TXN-2026-0108,2026-03-19,Servicios Nube Azure,Microsoft Ireland Operations,651.99,PayPal,CANCELADO
+TXN-2026-0354,2026-06-13,Licencias MetaTrader 5 / VPS Trading,Beeks Financial Cloud / MQ Hosting,1143.34,Transferencia Bancaria,Error Banco
+TXN-2026-0311,20/01/2026,Servicios Nube Azure,Milesight IoT Co.,540.47,PayPal,PAGADO
+TXN-2026-0134,2026-03-31,Suscripción Canva Pro / Marketing,MercadoLibre Colombia,294.98,Transferencia Bancaria,Pendiente
+TXN-2026-0347,2026-08-13,Suscripción Canva Pro / Marketing,Amazon Web Services LLC,555.89,Transferencia Bancaria,Error Banco
+TXN-2026-0045,2026-05-02,Herramientas de Hardware IoT (Raspberry/ESP32),PetShop Supply Co.,115.48,Pse / Débito,Error Banco
+TXN-2026-0438,2026-06-18,Servicio de Internet Fibra Óptica,ETB / Tigo Telecomunicaciones,1077.91,Efectivo,Aprobado
+TXN-2026-0066,2026-03-13,Honorarios Consultoría Quant,Beeks Financial Cloud / MQ Hosting,627.2,Transferencia Bancaria,PAGADO
+TXN-2026-0284,2026-05-16,Servicio de Internet Fibra Óptica,MercadoLibre Colombia,431.16,Transferencia Bancaria,pagado
+TXN-2026-0086,2026-03-03,lic3nci4s m3t4tr4d3r 5 / vps tr4ding,ETB / Tigo Telecomunicaciones,498.47,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0243,2026-01-22,Alimento Medicado Mascotas,PetShop Supply Co.,197.82,PayPal,Pagado
+TXN-2026-0187,2026-04-27,Mantenimiento Servidor Local / Ngrok,OpenAI LLC,741.49,Pse / Débito,Aprobado
+TXN-2026-0160,2026-02-21,Insumos Peluquería Canina HeisGroomer,Beeks Financial Cloud / MQ Hosting,1187.11,,CANCELADO
+TXN-2026-0013,2026-03-09,Herramientas de Hardware IoT (Raspberry/ESP32),OpenAI LLC,141.1,Pse / Débito,Pendiente
+TXN-2026-0036,2026-07-24,Alimento Medicado Mascotas,Amazon Web Services LLC,1110.52,Efectivo,Error Banco
+TXN-2026-0029,2026-01-26,Compra Sensores LoRaWAN AgroTech,ETB / Tigo Telecomunicaciones,1120.91,Transferencia Bancaria,Pendiente
+TXN-2026-0171,2026-07-22,h3rr4mi3nt4s d3 h4rdw4r3 iot (r4spb3rry/3sp32),Meta Platforms Ireland Ltd,671.52,Pse / Débito,Pagado
+TXN-2026-0143,2026-04-07,Insumos Peluquería Canina HeisGroomer,OpenAI LLC,997.32,Pse / Débito,CANCELADO
+TXN-2026-0381,2026-05-13,HONORARIOS CONSULTORÍA QUANT,Transportes del Darién S.A.,799.13,PayPal,CANCELADO
+TXN-2026-0379,06/06/2026,Transporte Logístico Urabá,PetShop Supply Co.,169.83,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0222,,Alimento Medicado Mascotas,Agropecuaria y Mascotas Mutatá,173.9,Transferencia Bancaria,Pagado
+TXN-2026-0096,2026-04-06,Compra Sensores LoRaWAN AgroTech,ETB / Tigo Telecomunicaciones,822.93,Transferencia Bancaria,Error Banco
+TXN-2026-0052,2026-01-21,Compra Sensores LoRaWAN AgroTech,Agropecuaria y Mascotas Mutatá,,Efectivo,PAGADO
+TXN-2026-0241,2026-03-29,Servicio de Internet Fibra Óptica,Transportes del Darién S.A.,$931.66,PayPal,PAGADO
+TXN-2026-0356,2026-04-18,Honorarios Consultoría Quant,Amazon Web Services LLC,1193.78,PayPal,Pendiente
+TXN-2026-0362,2026-07-19,Insumos Peluquería Canina HeisGroomer,MercadoLibre Colombia,,Efectivo,Error Banco
+TXN-2026-0179,2026-04-17,Compra Sensores LoRaWAN AgroTech,Distribuidora Estética Mascotas SAS,385.41,PayPal,Pendiente
+TXN-2026-0042,2026-08-24,Insumos Peluquería Canina HeisGroomer,MercadoLibre Colombia,867.91,PayPal,Aprobado
+TXN-2026-0371,2026-01-27,Servicio de Internet Fibra Óptica,Microsoft Ireland Operations,944.94,Pse / Débito,Aprobado
+TXN-2026-0207,2026-06-26,Licencias MetaTrader 5 / VPS Trading,Distribuidora Estética Mascotas SAS,274.67,Transferencia Bancaria,pagado
+TXN-2026-0283,2026-07-07,Servicios Nube Azure,Distribuidora Estética Mascotas SAS,369.62,Transferencia Bancaria,CANCELADO
+TXN-2026-0255,2026-04-01,Servicio de Internet Fibra Óptica,Amazon Web Services LLC,779.36,PayPal,PAGADO
+TXN-2026-0395,2026-02-15,Honorarios Consultoría Quant,MercadoLibre Colombia,151.76,Efectivo,CANCELADO
+TXN-2026-0005,2026-06-08,Insumos Peluquería Canina HeisGroomer,Transportes del Darién S.A.,97.42,PayPal,Error Banco
+TXN-2026-0257,2026-05-31,Suscripción OpenAI API,Distribuidora Estética Mascotas SAS,587.08,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0428,2026-01-11,Insumos Peluquería Canina HeisGroomer,Microsoft Ireland Operations,632.83,PayPal,pagado
+TXN-2026-0101,2026-08-20,Herramientas de Hardware IoT (Raspberry/ESP32),Milesight IoT Co.,432.5,Pse / Débito,Error Banco
+TXN-2026-0227,2026-07-25,Publicidad Meta Ads (Instagram/FB),Distribuidora Estética Mascotas SAS,454.29,Pse / Débito,CANCELADO
+TXN-2026-0408,2026-01-07,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,617.85,PayPal,Pendiente
+TXN-2026-0214,2026-06-24,,ETB / Tigo Telecomunicaciones,1034.44,Pse / Débito,Pendiente
+TXN-2026-0172,2026-04-12,Honorarios Consultoría Quant,Meta Platforms Ireland Ltd,926.46,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0099,2026-02-20,SUSCRIPCIÓN CANVA PRO / MARKETING,Meta Platforms Ireland Ltd,466.92,PayPal,
+TXN-2026-0293,2026-02-14,Honorarios Consultoría Quant,OpenAI LLC,209.14,Pse / Débito,Error Banco
+TXN-2026-0216,2026-04-28,Licencias MetaTrader 5 / VPS Trading,Milesight IoT Co.,874.15,Efectivo,Pagado
+TXN-2026-0062,2026.07.20,Mantenimiento Servidor Local / Ngrok,Agropecuaria y Mascotas Mutatá,96.71,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0048,2026-01-28,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,839.66,Pse / Débito,Error Banco
+TXN-2026-0033,2026-03-09,Publicidad Meta Ads (Instagram/FB),ETB / Tigo Telecomunicaciones,679.67,Transferencia Bancaria,Error Banco
+TXN-2026-0268,2026-01-09,Mantenimiento Servidor Local / Ngrok,Beeks Financial Cloud / MQ Hosting,556.93,Efectivo,Pagado
+TXN-2026-0328,2026-06-16,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,-962.05,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0201,2026-01-10,Alimento Medicado Mascotas,Meta Platforms Ireland Ltd,902.57,PayPal,Pagado
+TXN-2026-0426,2026-04-25,Servicio de Internet Fibra Óptica,Transportes del Darién S.A.,1161.77,Efectivo,Pagado
+TXN-2026-0028,2026-03-09,Transporte Logístico Urabá,MercadoLibre Colombia,389.67,,pagado
+TXN-2026-0132,2026-08-31,Suscripción Canva Pro / Marketing,PetShop Supply Co.,119.43,Transferencia Bancaria,PAGADO
+TXN-2026-0231,2026-08-30,Servicios de Nube AWS,Amazon Web Services LLC,1013.42,,pagado
+TXN-2026-0261,2026-02-20,4lim3nto m3dic4do m4scot4s,Agropecuaria y Mascotas Mutatá,269.53,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0289,2026-07-15,h3rr4mi3nt4s d3 h4rdw4r3 iot (r4spb3rry/3sp32),Microsoft Ireland Operations,95.03,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0163,2026-02-16,INSUMOS PELUQUERÍA CANINA HEISGROOMER,Microsoft Ireland Operations,798.19,Pse / Débito,Pendiente
+TXN-2026-0406,2026-02-25,Servicio de Internet Fibra Óptica,ETB / Tigo Telecomunicaciones,680.18,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0139,2026-01-16,Herramientas de Hardware IoT (Raspberry/ESP32),Distribuidora Estética Mascotas SAS,114.93,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0063,2026-04-21,Transporte Logístico Urabá,Meta Platforms Ireland Ltd,531.05,PayPal,pagado
+TXN-2026-0136,2026-06-09,Transporte Logístico Urabá,Distribuidora Estética Mascotas SAS,95.92,PayPal,pagado
+TXN-2026-0129,2026-02-22,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,357.99,Efectivo,Pendiente
+TXN-2026-0118,2026-04-27,Alimento Medicado Mascotas,Microsoft Ireland Operations,150.58,Pse / Débito,Pendiente
+TXN-2026-0009,2026-05-08,,Meta Platforms Ireland Ltd,180.46,Pse / Débito,pagado
+TXN-2026-0327,2026-07-07,Suscripción OpenAI API,Agropecuaria y Mascotas Mutatá,463.77,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0441,2026-05-28,Mantenimiento Servidor Local / Ngrok,Amazon Web Services LLC,258.42,Efectivo,Pendiente
+TXN-2026-0065,2026-04-29,Transporte Logístico Urabá,Agropecuaria y Mascotas Mutatá,600.75,Efectivo,Error Banco
+TXN-2026-0301,2026-08-19,Herramientas de Hardware IoT (Raspberry/ESP32),Milesight IoT Co.,$1119.89,Pse / Débito,Error Banco
+TXN-2026-0015,,SERVICIO DE INTERNET FIBRA ÓPTICA,Microsoft Ireland Operations,,Pse / Débito,Pendiente
+TXN-2026-0157,2026-04-10,Servicios de Nube AWS,MercadoLibre Colombia,457.36,PayPal,Aprobado
+TXN-2026-0041,2026-01-01,Herramientas de Hardware IoT (Raspberry/ESP32),ETB / Tigo Telecomunicaciones,1129.21,Transferencia Bancaria,Pagado
+TXN-2026-0437,2026-07-31,Servicios Nube Azure,OpenAI LLC,-743.48,Pse / Débito,Pagado
+TXN-2026-0413,2026-08-06,Mantenimiento Servidor Local / Ngrok,Microsoft Ireland Operations,827.77,PayPal,PAGADO
+TXN-2026-0217,2026-01-18,Servicios de Nube AWS,Meta Platforms Ireland Ltd,-848.39,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0280,2026-03-19,Licencias MetaTrader 5 / VPS Trading,Microsoft Ireland Operations,311.71,Transferencia Bancaria,CANCELADO
+TXN-2026-0445,2026-07-25,Honorarios Consultoría Quant,MercadoLibre Colombia,205.47,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0410,2026-02-22,Honorarios Consultoría Quant,PetShop Supply Co.,781.17,,CANCELADO
+TXN-2026-0338,2026-07-13,Suscripción OpenAI API,Milesight IoT Co.,164.53,Efectivo,Error Banco
+TXN-2026-0237,2026-08-18,Servicios de Nube AWS,Milesight IoT Co.,1043.72,Efectivo,Pagado
+TXN-2026-0208,2026-06-29,Publicidad Meta Ads (Instagram/FB),ETB / Tigo Telecomunicaciones,993.34,Pse / Débito,Pagado
+TXN-2026-0213,2026-04-15,Suscripción OpenAI API,MercadoLibre Colombia,780.37,Efectivo,PAGADO
+TXN-2026-0296,2026-03-07,Servicio de Internet Fibra Óptica,MercadoLibre Colombia,285.66,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0435,2026-04-16,Herramientas de Hardware IoT (Raspberry/ESP32),Transportes del Darién S.A.,230.53,PayPal,CANCELADO
+TXN-2026-0252,2026-02-23,  Licencias MetaTrader 5 / VPS Trading   ,PetShop Supply Co.,1019.63,Efectivo,Aprobado
+TXN-2026-0317,2026-06-18,  Mantenimiento Servidor Local / Ngrok   ,PetShop Supply Co.,1195.72,Efectivo,Error Banco
+TXN-2026-0010,2026-05-30,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,-122.73,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0304,2026-07-11,,ETB / Tigo Telecomunicaciones,,Pse / Débito,CANCELADO
+TXN-2026-0351,2026-05-02,Transporte Logístico Urabá,OpenAI LLC,25.03,PayPal,CANCELADO
+TXN-2026-0270,2026-08-01,Compra Sensores LoRaWAN AgroTech,Beeks Financial Cloud / MQ Hosting,53.19,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0202,2026-06-04,Insumos Peluquería Canina HeisGroomer,Beeks Financial Cloud / MQ Hosting,774.96,Transferencia Bancaria,PAGADO
+TXN-2026-0162,2026-02-17,Publicidad Meta Ads (Instagram/FB),Distribuidora Estética Mascotas SAS,630.34,Efectivo,pagado
+TXN-2026-0044,02/08/2026,Licencias MetaTrader 5 / VPS Trading,Milesight IoT Co.,702.28,Efectivo,CANCELADO
+TXN-2026-0218,2026-07-13,Servicios de Nube AWS,OpenAI LLC,357.78,Pse / Débito,pagado
+TXN-2026-0191,2026-01-05,Alimento Medicado Mascotas,OpenAI LLC,256.61,Pse / Débito,Error Banco
+TXN-2026-0310,2026-01-16,Compra Sensores LoRaWAN AgroTech,OpenAI LLC,489.69,Tarjeta de Crédito Corporativa,Aprobado
+TXN-2026-0260,2026-05-24,Publicidad Meta Ads (Instagram/FB),Milesight IoT Co.,761.27,Efectivo,CANCELADO
+TXN-2026-0106,2026-06-22,Alimento Medicado Mascotas,MercadoLibre Colombia,143.39,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0054,2026-03-18,Suscripción Canva Pro / Marketing,Agropecuaria y Mascotas Mutatá,885.54,Transferencia Bancaria,Aprobado
+TXN-2026-0390,2026-08-03,Servicios Nube Azure,Meta Platforms Ireland Ltd,713.34,,CANCELADO
+TXN-2026-0002,2026-01-24,m4nt3nimi3nto s3rvidor loc4l / ngrok,Transportes del Darién S.A.,250.62,Pse / Débito,PAGADO
+TXN-2026-0421,2026-06-14,,Distribuidora Estética Mascotas SAS,883.57,Efectivo,Error Banco
+TXN-2026-0071,2026-07-01,Licencias MetaTrader 5 / VPS Trading,Amazon Web Services LLC,670.73,Transferencia Bancaria,Error Banco
+TXN-2026-0050,2026-04-20,Mantenimiento Servidor Local / Ngrok,Meta Platforms Ireland Ltd,896.23,PayPal,Error Banco
+TXN-2026-0081,2026-06-22,Servicio de Internet Fibra Óptica,Amazon Web Services LLC,222.6,Efectivo,Pendiente
+TXN-2026-0206,2026-03-08,  Honorarios Consultoría Quant   ,Milesight IoT Co.,155.1,Efectivo,CANCELADO
+TXN-2026-0035,2026-06-20,Herramientas de Hardware IoT (Raspberry/ESP32),ETB / Tigo Telecomunicaciones,496.56,Transferencia Bancaria,Pendiente
+TXN-2026-0264,2026-02-04,COMPRA SENSORES LORAWAN AGROTECH,Beeks Financial Cloud / MQ Hosting,457.37,Efectivo,Pendiente
+TXN-2026-0367,2026-02-18,h3rr4mi3nt4s d3 h4rdw4r3 iot (r4spb3rry/3sp32),Agropecuaria y Mascotas Mutatá,280.82,Transferencia Bancaria,pagado
+TXN-2026-0092,2026-06-01,SERVICIOS NUBE AZURE,Meta Platforms Ireland Ltd,$1093.87,Transferencia Bancaria,CANCELADO
+TXN-2026-0340,2026-04-28,Servicios de Nube AWS,PetShop Supply Co.,634.24,Efectivo,pagado
+TXN-2026-0450,2026-07-08,Servicios Nube Azure,ETB / Tigo Telecomunicaciones,998.27,PayPal,Error Banco
+TXN-2026-0053,2026-02-22,Alimento Medicado Mascotas,Transportes del Darién S.A.,38.15,Pse / Débito,Pagado
+TXN-2026-0346,2026-04-06,  Mantenimiento Servidor Local / Ngrok   ,OpenAI LLC,855.84,Pse / Débito,Pagado
+TXN-2026-0265,2026-04-19,Transporte Logístico Urabá,ETB / Tigo Telecomunicaciones,779.63,Pse / Débito,Aprobado
+TXN-2026-0242,2026-04-02,Alimento Medicado Mascotas,Agropecuaria y Mascotas Mutatá,709.26,Pse / Débito,Pendiente
+TXN-2026-0014,2026-02-11,Herramientas de Hardware IoT (Raspberry/ESP32),ETB / Tigo Telecomunicaciones,724.75,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0316,2026-01-08,  Herramientas de Hardware IoT (Raspberry/ESP32)   ,Beeks Financial Cloud / MQ Hosting,1189.96,Pse / Débito,Pendiente
+TXN-2026-0089,30/07/2026,Honorarios Consultoría Quant,Beeks Financial Cloud / MQ Hosting,702.21,Transferencia Bancaria,PAGADO
+TXN-2026-0388,2026-03-16,INSUMOS PELUQUERÍA CANINA HEISGROOMER,PetShop Supply Co.,1077.8,Efectivo,pagado
+TXN-2026-0274,2026-02-02,,Milesight IoT Co.,396.68,Efectivo,pagado
+TXN-2026-0167,2026-02-05,Alimento Medicado Mascotas,Distribuidora Estética Mascotas SAS,310.79,Transferencia Bancaria,PAGADO
+TXN-2026-0329,2026-02-13,  Suscripción OpenAI API   ,PetShop Supply Co.,1131.07,PayPal,pagado
+TXN-2026-0056,2026-04-11,TRANSPORTE LOGÍSTICO URABÁ,Amazon Web Services LLC,522.91,Transferencia Bancaria,PAGADO
+TXN-2026-0135,2026-06-17,Herramientas de Hardware IoT (Raspberry/ESP32),MercadoLibre Colombia,909.02,Efectivo,pagado
+TXN-2026-0307,2026-07-17,Licencias MetaTrader 5 / VPS Trading,Meta Platforms Ireland Ltd,157.1,PayPal,CANCELADO
+TXN-2026-0326,2026-08-15,Servicios de Nube AWS,Beeks Financial Cloud / MQ Hosting,836.41,Tarjeta de Crédito Corporativa,Pagado
+TXN-2026-0320,03/05/2026,Servicio de Internet Fibra Óptica,Milesight IoT Co.,418.8,PayPal,Pendiente
+TXN-2026-0244,2026-04-24,,Microsoft Ireland Operations,237.06,Pse / Débito,
+TXN-2026-0055,2026-01-08,Transporte Logístico Urabá,MercadoLibre Colombia,873.15,Transferencia Bancaria,
+TXN-2026-0364,2026-05-17,Insumos Peluquería Canina HeisGroomer,Amazon Web Services LLC,911.86,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0051,2026-07-16,Publicidad Meta Ads (Instagram/FB),MercadoLibre Colombia,536.25,Transferencia Bancaria,Aprobado
+TXN-2026-0175,2026-08-05,Compra Sensores LoRaWAN AgroTech,MercadoLibre Colombia,340.22,Pse / Débito,pagado
+TXN-2026-0190,2026-05-03,Transporte Logístico Urabá,PetShop Supply Co.,1011.78,,CANCELADO
+TXN-2026-0079,2026-03-15,Publicidad Meta Ads (Instagram/FB),PetShop Supply Co.,491.97,Pse / Débito,Pagado
+TXN-2026-0188,2026-05-10,Mantenimiento Servidor Local / Ngrok,Meta Platforms Ireland Ltd,370.25,PayPal,Pagado
+TXN-2026-0170,2026-05-19,Licencias MetaTrader 5 / VPS Trading,OpenAI LLC,1113.88,PayPal,Pagado
+TXN-2026-0059,2026-06-21,Compra Sensores LoRaWAN AgroTech,Meta Platforms Ireland Ltd,923.77,Pse / Débito,CANCELADO
+TXN-2026-0049,2026-02-04,Transporte Logístico Urabá,ETB / Tigo Telecomunicaciones,720.61,Efectivo,CANCELADO
+TXN-2026-0345,2026-03-24,Alimento Medicado Mascotas,Transportes del Darién S.A.,237.7,Efectivo,Error Banco
+TXN-2026-0236,2026-01-15,HONORARIOS CONSULTORÍA QUANT,OpenAI LLC,1016.72,PayPal,Error Banco
+TXN-2026-0253,2026-06-18,  Alimento Medicado Mascotas   ,Agropecuaria y Mascotas Mutatá,1188.98,Efectivo,Error Banco
+TXN-2026-0022,2026-08-25,HERRAMIENTAS DE HARDWARE IOT (RASPBERRY/ESP32),ETB / Tigo Telecomunicaciones,787.79,Tarjeta de Crédito Corporativa,Error Banco
+TXN-2026-0314,2026-03-13,Alimento Medicado Mascotas,Milesight IoT Co.,959.68,Pse / Débito,PAGADO
+TXN-2026-0161,2026-04-02,Servicios de Nube AWS,MercadoLibre Colombia,162.5,Efectivo,PAGADO
+TXN-2026-0277,2026-06-28,Servicios Nube Azure,ETB / Tigo Telecomunicaciones,1162.23,Efectivo,Error Banco
+TXN-2026-0444,2026-08-07,Servicios Nube Azure,PetShop Supply Co.,942.98,Tarjeta de Crédito Corporativa,PAGADO
+TXN-2026-0192,,Suscripción OpenAI API,ETB / Tigo Telecomunicaciones,400.18,Pse / Débito,Pendiente
+TXN-2026-0386,2026-06-21,Insumos Peluquería Canina HeisGroomer,Distribuidora Estética Mascotas SAS,982.66,PayPal,pagado
+TXN-2026-0294,2026-02-12,Honorarios Consultoría Quant,Beeks Financial Cloud / MQ Hosting,154.9,PayPal,Aprobado
+TXN-2026-0414,2026-07-30,Publicidad Meta Ads (Instagram/FB),OpenAI LLC,176.61,Pse / Débito,CANCELADO
+TXN-2026-0344,2026-03-21,Publicidad Meta Ads (Instagram/FB),PetShop Supply Co.,1167.41,PayPal,PAGADO
+TXN-2026-0258,2026-03-21,Herramientas de Hardware IoT (Raspberry/ESP32),Milesight IoT Co.,42774.0,Efectivo,Aprobado
+TXN-2026-0309,2026.02.14,Alimento Medicado Mascotas,Meta Platforms Ireland Ltd,66689.0,Tarjeta de Crédito Corporativa,Pendiente
+TXN-2026-0150,2026-05-13,Licencias MetaTrader 5 / VPS Trading,Microsoft Ireland Operations,338.26,Transferencia Bancaria,Pagado
+TXN-2026-0131,2026-08-09,Alimento Medicado Mascotas,Transportes del Darién S.A.,773.57,,Aprobado
+TXN-2026-0152,2026-03-23,Suscripción Canva Pro / Marketing,PetShop Supply Co.,952.79,PayPal,PAGADO
+TXN-2026-0360,2026-05-29,Servicios Nube Azure,Meta Platforms Ireland Ltd,608.07,Efectivo,PAGADO
+TXN-2026-0100,2026-08-01,Licencias MetaTrader 5 / VPS Trading,Amazon Web Services LLC,827.67,Tarjeta de Crédito Corporativa,CANCELADO
+TXN-2026-0373,2026-01-23,Suscripción Canva Pro / Marketing,Transportes del Darién S.A.,19174.0,Pse / Débito,CANCELADO
+TXN-2026-0088,2026-02-18,Mantenimiento Servidor Local / Ngrok,PetShop Supply Co.,1038.87,Efectivo,Error Banco
+TXN-2026-0269,2026-03-10,Suscripción Canva Pro / Marketing,Distribuidora Estética Mascotas SAS,911.79,Efectivo,PAGADO
+TXN-2026-0331,2026-05-22,Honorarios Consultoría Quant,ETB / Tigo Telecomunicaciones,348.6,Tarjeta de Crédito Corporativa,pagado
+TXN-2026-0215,2026-02-27,Herramientas de Hardware IoT (Raspberry/ESP32),Amazon Web Services LLC,563.66,Efectivo,Error Banco
+TXN-2026-0122,2026-03-15,Insumos Peluquería Canina HeisGroomer,Microsoft Ireland Operations,267.1,Transferencia Bancaria,Aprobado
+TXN-2026-0114,2026-04-02,Compra Sensores LoRaWAN AgroTech,Transportes del Darién S.A.,,Efectivo,CANCELADO
+TXN-2026-0021,2026-04-14,Herramientas de Hardware IoT (Raspberry/ESP32),Microsoft Ireland Operations,240.4,Efectivo,PAGADO
+TXN-2026-0189,2026-05-30,Honorarios Consultoría Quant,PetShop Supply Co.,722.34,Pse / Débito,CANCELADO
+TXN-2026-0072,12/08/2026,Licencias MetaTrader 5 / VPS Trading,Meta Platforms Ireland Ltd,418.74,PayPal,PAGADO
+TXN-2026-0107,2026-06-06,Servicios Nube Azure,MercadoLibre Colombia,1092.62,Efectivo,Pagado
+TXN-2026-0271,2026-03-02,Honorarios Consultoría Quant,Transportes del Darién S.A.,1035.34,Efectivo,Pendiente
+TXN-2026-0349,2026-03-31,Suscripción Canva Pro / Marketing,Beeks Financial Cloud / MQ Hosting,831.29,,Error Banco
+TXN-2026-0436,2026-04-27,Servicios Nube Azure,Milesight IoT Co.,$171.67,Pse / Débito,pagado
+TXN-2026-0103,2026-01-24,Insumos Peluquería Canina HeisGroomer,PetShop Supply Co.,252.94,PayPal,Aprobado
